@@ -1,0 +1,209 @@
+$social-background: #1c3643;
+$logo-background: #ee3f54;
+$menu-background: #48a19d;
+$menu-color: #f6e15f;
+$tickets-background: #5e7eb7;
+$tickets-color: #a7fffb;
+$tickets-container-color: #161742;
+$lineup-background: #9676af;
+$table-background: #333;
+$table-description: #777;
+$price-background: #f6f6f6;
+$table-color: #eee;
+$subscribe-title: #ffcddc;
+$error-background: #fed3d0;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+button {
+  font-family: 'Bree Serif', serif;
+}
+
+#social-container {
+  background-color: $social-background;
+}
+
+#logo-container {
+  .callout {
+    background-color: $logo-background;
+    color: $white;
+    margin: 0;
+  }
+}
+
+#menu-container {
+  background-color: $menu-background;
+}
+
+#menu-container li a {
+  color: $white;
+  font-family: 'Bree Serif', serif;
+  text-transform: uppercase;
+ }
+
+#submenu-container {
+  border: 0;
+}
+
+#menu-container li a:hover,
+#submenu-container li a:hover {
+  color: $menu-color;
+  font-family: 'Bree Serif', serif;
+}
+
+#submenu-container {
+  background-color: $menu-background;
+  color: $white;
+}
+
+#tickets-action .callout {
+  background-color: $tickets-background;
+  color: $white;
+  margin: 0;
+}
+
+#tickets-action .callout button {
+  color: $white;
+  border: 1px solid $white;
+}
+
+#tickets-action .callout button:hover {
+  color: $tickets-color;
+  border-color: $tickets-color;
+}
+
+#lineup-container {
+  padding: 1em 0;
+}
+
+#lineup-container,
+#lineup-container .tabs-panel,
+#lineup-container .tabs,
+#lineup-container .tabs .tabs-title,
+#lineup-container .tabs .tabs-title.is-active a {
+  background-color: $lineup-background;
+  color: $white;
+  border: 0;
+  text-transform: uppercase;
+  font-family: 'Bree Serif', serif;
+}
+
+#lineup-container .tabs .tabs-title a {
+  font-size: 18px;
+  color: $tickets-color;
+}
+
+#lineup-container .tabs .tabs-title a:hover {
+  color: $white;
+  background-color: $lineup-background;
+}
+/**
+  Foundation no permite que los tabs esten centrados asi
+  que los estilos acontinuación permiten esto.
+
+  Obtenido de Building-blocks Center-Tabs
+*/
+.tabs-title {
+  display: inline-block;
+  float: none;
+}
+
+.tabs-content {
+  border: 0;
+}
+
+#lineup-container .orbit-container {
+  margin-bottom: 1em;
+}
+
+#lineup-container .column:nth-child(odd) figcaption {
+  text-align: right;
+}
+
+#tickets-container {
+  padding: 1em 0;
+  background-color: $menu-color;
+  color: $tickets-container-color;
+}
+
+/**
+  Tabla de precios obtenida de buildings-blocks
+*/
+.pricing-table {
+  border: solid 1px $tickets-container-color;
+  font-family: 'Ravi Prakash', cursive;}
+
+  .pricing-table li {
+    border-bottom: dotted 1px $tickets-container-color;
+    font-size: 1.5rem;
+    padding: 0.875rem 1.125rem; }
+    .pricing-table li:last-child {
+      border-bottom: 0; }
+
+  .pricing-table .title {
+    background-color: $table-background;
+    color: $table-color;
+    font-size: 2rem;
+    border-bottom: 0; }
+
+  .pricing-table .price {
+    background-color: $price-background;
+    color: $table-background;
+    font-size: 1.75rem;
+    border-bottom: 0; }
+
+  .pricing-table .description {
+    color: $table-description;
+    font-size: 1.2rem; }
+
+  .pricing-table .button {
+    margin: 0;
+  font-size: 1rem;}
+
+#info-container {
+  background-color: $tickets-container-color;
+  color: $white;
+  padding: 1em 0;
+}
+
+#info-container .info-map iframe {
+  width: 100%;
+}
+
+#suscribete-container {
+  background-color: $logo-background;
+  color: $white;
+  padding: 1rem 0;
+}
+
+#suscribete-container h4 small {
+  color: $subscribe-title;
+}
+
+.is-invalid-input:not(:focus) {
+  background-color: $error-background;
+  border-color: $error-background;
+}
+
+.data-sticky {
+  width: 100%;
+}
+
+#offCanvas,
+#offCanvas li a {
+  background-color: $black;
+  color: $white;
+  font-family: 'Bree Serif', serif,
+}
+
+#offCanvas .is-drilldown-submenu-parent > a::after {
+    border-color: transparent $white;
+}
+
+#offCanvas .js-drilldown-back > a::before {
+    border-color: transparent $white;
+}
